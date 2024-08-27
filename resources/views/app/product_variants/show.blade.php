@@ -17,9 +17,9 @@
                 <div class="mt-4 px-4">
                     <div class="mb-4">
                         <h5 class="font-medium text-gray-700">
-                            @lang('crud.product_variants.inputs.color')
+                            @lang('crud.product_variants.inputs.colour')
                         </h5>
-                        <span>{{ $productVariant->color ?? '-' }}</span>
+                        <span>{{ $productVariant->colour ?? '-' }}</span>
                     </div>
                     <div class="mb-4">
                         <h5 class="font-medium text-gray-700">

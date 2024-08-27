@@ -109,7 +109,7 @@ class ProductVariantControllerTest extends TestCase
         $productVariant = ProductVariant::factory()->create();
 
         $data = [
-            'color' => $this->faker->hexcolor(),
+            'colour' => $this->faker->hexcolor(),
             'size' => $this->faker->randomFloat(2, 0, 9999),
             'price' => $this->faker->randomFloat(2, 0, 9999),
         ];

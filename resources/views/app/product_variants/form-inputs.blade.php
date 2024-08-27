@@ -3,11 +3,11 @@
 <div class="flex flex-wrap">
     <x-inputs.group class="w-full">
         <x-inputs.text
-            name="color"
-            label="Color"
-            :value="old('color', ($editing ? $productVariant->color : ''))"
+            name="colour"
+            label="Colour"
+            :value="old('colour', ($editing ? $productVariant->colour : ''))"
             maxlength="9"
-            placeholder="Color"
+            placeholder="Colour"
             required
         ></x-inputs.text>
     </x-inputs.group>

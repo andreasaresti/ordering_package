@@ -23,7 +23,7 @@ class ProductVariantFactory extends Factory
     public function definition(): array
     {
         return [
-            'color' => $this->faker->hexcolor(),
+            'colour' => $this->faker->hexcolor(),
             'size' => $this->faker->randomFloat(2, 0, 9999),
             'price' => $this->faker->randomFloat(2, 0, 9999),
         ];

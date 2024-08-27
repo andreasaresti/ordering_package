@@ -31,7 +31,7 @@ class ProductVariantTest extends TestCase
 
         $response = $this->getJson(route('api.product-variants.index'));
 
-        $response->assertOk()->assertSee($productVariants[0]->color);
+        $response->assertOk()->assertSee($productVariants[0]->colour);
     }
 
     /**
@@ -58,7 +58,7 @@ class ProductVariantTest extends TestCase
         $productVariant = ProductVariant::factory()->create();
 
         $data = [
-            'color' => $this->faker->hexcolor(),
+            'colour' => $this->faker->hexcolor(),
             'size' => $this->faker->randomFloat(2, 0, 9999),
             'price' => $this->faker->randomFloat(2, 0, 9999),
         ];

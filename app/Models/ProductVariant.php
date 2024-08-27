@@ -11,7 +11,7 @@ class ProductVariant extends Model
     use HasFactory;
     use Searchable;
 
-    protected $fillable = ['color', 'size', 'price'];
+    protected $fillable = ['colour', 'size', 'price'];
 
     protected $searchableFields = ['*'];
 

@@ -38,7 +38,7 @@
                             @lang('crud.order_items.inputs.product_variant_id')
                         </h5>
                         <span
-                            >{{ optional($orderItem->productVariant)->color ??
+                            >{{ optional($orderItem->productVariant)->colour ??
                             '-' }}</span
                         >
                     </div>

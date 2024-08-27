@@ -12,7 +12,7 @@ return new class extends Migration {
     {
         Schema::create('product_variants', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('color', 9);
+            $table->string('colour', 9);
             $table->decimal('size');
             $table->decimal('price');
 

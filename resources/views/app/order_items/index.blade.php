@@ -86,7 +86,7 @@
                                 </td>
                                 <td class="px-4 py-3 text-left">
                                     {{
-                                    optional($orderItem->productVariant)->color
+                                    optional($orderItem->productVariant)->colour
                                     ?? '-' }}
                                 </td>
                                 <td class="px-4 py-3 text-left">

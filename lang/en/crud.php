@@ -78,7 +78,7 @@ return [
         'edit_title' => 'Edit ProductVariant',
         'show_title' => 'Show ProductVariant',
         'inputs' => [
-            'color' => 'Color',
+            'colour' => 'Colour',
             'size' => 'Size',
             'price' => 'Price',
         ],

@@ -20,7 +20,7 @@ class ProductVariantStoreRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'color' => ['required'],
+            'colour' => ['required', 'max:9', 'string'],
             'size' => ['required', 'numeric'],
             'price' => ['required', 'numeric'],
         ];

@@ -50,7 +50,7 @@
                         <thead class="text-gray-700">
                             <tr>
                                 <th class="px-4 py-3 text-left">
-                                    @lang('crud.product_variants.inputs.color')
+                                    @lang('crud.product_variants.inputs.colour')
                                 </th>
                                 <th class="px-4 py-3 text-right">
                                     @lang('crud.product_variants.inputs.size')
@@ -65,7 +65,7 @@
                             @forelse($productVariants as $productVariant)
                             <tr class="hover:bg-gray-50">
                                 <td class="px-4 py-3 text-left">
-                                    {{ $productVariant->color ?? '-' }}
+                                    {{ $productVariant->colour ?? '-' }}
                                 </td>
                                 <td class="px-4 py-3 text-right">
                                     {{ $productVariant->size ?? '-' }}

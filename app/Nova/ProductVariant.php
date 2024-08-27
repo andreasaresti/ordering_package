@@ -5,6 +5,7 @@ namespace App\Nova;
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Number;
+use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
@@ -22,14 +23,14 @@ class ProductVariant extends Resource
      *
      * @var string
      */
-    public static $title = 'color';
+    public static $title = 'colour';
 
     /**
      * The columns that should be searched.
      *
      * @var array
      */
-    public static $search = ['color'];
+    public static $search = ['colour'];
 
     /**
      * Get the fields displayed by the resource.
@@ -42,11 +43,11 @@ class ProductVariant extends Resource
         return [
             ID::make('id')->sortable(),
 
-            Color::make('Color')
-                ->rules('required')
-                ->placeholder('Color'),
+            Text::make('Colour')
+                ->rules('required', 'max:9', 'string')
+                ->placeholder('Colour'),
 
-            Number::make('Size')
+            Text::make('Size')
                 ->rules('required', 'numeric')
                 ->placeholder('Size'),
 

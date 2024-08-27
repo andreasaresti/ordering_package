@@ -40,7 +40,7 @@ class OrderItemController extends Controller
 
         $orders = Order::pluck('date', 'id');
         $products = Product::pluck('name', 'id');
-        $productVariants = ProductVariant::pluck('color', 'id');
+        $productVariants = ProductVariant::pluck('colour', 'id');
 
         return view(
             'app.order_items.create',
@@ -83,7 +83,7 @@ class OrderItemController extends Controller
 
         $orders = Order::pluck('date', 'id');
         $products = Product::pluck('name', 'id');
-        $productVariants = ProductVariant::pluck('color', 'id');
+        $productVariants = ProductVariant::pluck('colour', 'id');
 
         return view(
             'app.order_items.edit',
