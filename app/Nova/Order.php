@@ -71,7 +71,7 @@ class Order extends Resource
 
             BelongsTo::make('User', 'user'),
 
-            OrderBuilder::make('Order Items')->products(Product::with(['OrderItems','OrderItems.options'])->get()),
+            OrderBuilder::make('Order Items')->products(Product::with([])->get()),
         ];
     }
 
