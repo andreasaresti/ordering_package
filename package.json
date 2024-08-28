@@ -3,7 +3,9 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build",
+        "build-order-builder": "cd nova-components/OrderBuilder && npm run dev",
+        "build-order-builder-prod": "cd nova-components/OrderBuilder && npm run prod"
     },
     "devDependencies": {
         "@alpinejs/focus": "^3.10.5",

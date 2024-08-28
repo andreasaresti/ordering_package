@@ -2,6 +2,7 @@
 
 namespace App\Nova;
 
+use App\Models\Product;
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Date;
@@ -10,6 +11,7 @@ use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Http\Requests\NovaRequest;
+use Eshop\OrderBuilder\OrderBuilder;
 
 class Order extends Resource
 {
@@ -68,6 +70,8 @@ class Order extends Resource
             HasMany::make('OrderItems', 'orderItems'),
 
             BelongsTo::make('User', 'user'),
+
+            OrderBuilder::make('Order Items')->products(Product::with(['OrderItems','OrderItems.options'])->get()),
         ];
     }
 

@@ -9,13 +9,15 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
-        "laravel/nova": "4.32.11",
+        "eshop/order-builder": "dev-master",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
         "laravel/jetstream": "^3.2",
+        "laravel/nova": "4.32.11",
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
-        "livewire/livewire": "^2.11"
+        "livewire/livewire": "^2.11",
+        "spatie/laravel-medialibrary": "^11.9"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -30,6 +32,10 @@
         {
             "type": "composer",
             "url": "https://nova.laravel.com"
+        },
+        {
+            "type": "path",
+            "url": "./nova-components/OrderBuilder"
         }
     ],
     "autoload": {
