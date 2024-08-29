@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ed303b232f580e5d75bb372ea0567497",
+    "content-hash": "598f756e3bc2645ba0c1c5796ad37f9a",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -372,6 +372,53 @@
                 "source": "https://github.com/DASPRiD/Enum/tree/1.0.6"
             },
             "time": "2024-08-09T14:30:48+00:00"
+        },
+        {
+            "name": "datomatic/nova-detached-actions",
+            "version": "2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/datomatic/nova-detached-actions.git",
+                "reference": "a282501ea219a8fdbee8cb590946637c81564d83"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/datomatic/nova-detached-actions/zipball/a282501ea219a8fdbee8cb590946637c81564d83",
+                "reference": "a282501ea219a8fdbee8cb590946637c81564d83",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/nova": "^4.32.0",
+                "php": ">=8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Datomatic\\Nova\\Tools\\DetachedActions\\ToolServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Datomatic\\Nova\\Tools\\DetachedActions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova tool to allow for placing actions in the Nova toolbar detached from the checkbox selection mechanism.",
+            "keywords": [
+                "detached actions",
+                "laravel",
+                "nova"
+            ],
+            "support": {
+                "issues": "https://github.com/datomatic/nova-detached-actions/issues",
+                "source": "https://github.com/datomatic/nova-detached-actions/tree/2.1.2"
+            },
+            "time": "2024-05-24T12:52:36+00:00"
         },
         {
             "name": "dflydev/dot-access-data",

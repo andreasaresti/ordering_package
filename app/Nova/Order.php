@@ -115,6 +115,23 @@ class Order extends Resource
      */
     public function actions(Request $request)
     {
-        return [];
+        return [
+            new \App\Nova\Actions\CreateOrder
+        ];
+    }
+
+    public static function authorizedToCreate(Request $request)
+    {
+        return false;
+    }
+
+    public function authorizedToDelete(Request $request)
+    {
+        return false;
+    }
+
+    public function authorizedToUpdate(Request $request)
+    {
+        return false;
     }
 }
